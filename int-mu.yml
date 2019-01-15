@@ -1,0 +1,16 @@
+---
+environments:
+  - name: acceptance
+    provider: ecs-fargate
+    loadbalancer:
+      #internal: true                # Whether to create an internal ELB or not (default: false)
+      hostedzone: int-you.raremark.com      # HostedZone in Route53 to create ELB DNS for.  Leave blank to not create DNS (default: none)
+      #certificate: 973c1a2f-8d43... # The identifi
+      #name: acc
+  - name: production
+    provider: ecs-fargate
+    loadbalancer:
+      #internal: true                # Whether to create an internal ELB or not (default: false)
+      hostedzone: int-you.raremark.com      # HostedZone in Route53 to create ELB DNS for.  Leave blank to not create DNS (default: none)
+      #name: prod
+      #certificate: 973c1a2f-8d43... # The identifi
